@@ -1,0 +1,7 @@
+1  test-ham-00002.txt  spam  -3.0  -2.3979400086720375  ham  wrong
+2  test-ham-00003.txt  spam  -6.3979400086720375  -5.71669877129645  ham  wrong
+3  test-ham-00004.txt  spam  -2.0  -1.3979400086720375  ham  wrong
+4  test-ham-00005.txt  spam  -4.3979400086720375  -4.318758762624412  ham  wrong
+5  test-ham-00006.txt  spam  -10.397940008672037  -8.59176003468815  ham  wrong
+6  test-ham-00007.txt  spam  -17.69897000433602  -12.882490073712319  ham  wrong
+7  test-ham-00008.txt  spam  -1.0  -0.6989700043360187  ham  wrong
