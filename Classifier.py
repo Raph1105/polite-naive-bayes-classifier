@@ -51,7 +51,7 @@ class Classifier:
             expected = "spam"
         
         #Open file
-        file = open(path+fileName)
+        file = open(path+fileName,encoding='Latin-1')
         
         #Reset counts
         for i in range(len(self.count)):
@@ -59,7 +59,7 @@ class Classifier:
         
         #Increment counts of words in vocabulary
         for line in file:
-            temp = re.split('[^a-zA-Z]',line)
+            temp = re.split('[^a-zA-Z]',line.lower())
             for word in temp:
                 #Only if the word exists
                 if word in self.wordMap:
@@ -81,6 +81,8 @@ class Classifier:
         
         #Update resultBuffer
         self.resultBuffer.append([str(len(self.resultBuffer)+1),fileName,choice,str(hamScore),str(spamScore),expected,label])
+        
+        file.close()
     
     #Be sure to pass the folder name in the form \[name]
     #Be sure that the folder is located in the same level as the driver file

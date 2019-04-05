@@ -7,10 +7,17 @@ Created on Tue Apr  2 13:32:06 2019
 
 import Classifier
 import numpy as np
+import Model
+
+mod = Model.Model()
+
+#mod.buildBaselineModel()
+#mod.buildStopModel()
+mod.buildWordLengthModel()
 
 test = Classifier.Classifier()
 test.loadModel()
-test.evaluateAllInFolder("\dirTest")
+test.evaluateAllInFolder("\\test")
 #test.evaluateFile("test-ham-00001.txt")
 test.writeBufferToFile()
 #print(test.PwHAM@test.PwSPAM)
